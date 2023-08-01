@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Gmail</title>
+</head>
+
+<body>
+    <header>
+        <div class="left flex">
+            <div class="menu"><i class="bi bi-list"></i></div>
+            <div>
+                <img src="assets/images/logo-24.png" alt="image">
+                <span>Gmail</span>
+            </div>
+        </div>
+        <div class="middle">
+            <form class="flex">
+                <div class="icon" id="search-icon">
+                    <i class="bi bi-search"></i>
+                </div>
+                <input id="search-input" type="search" placeholder="Search mails...">
+            </form>
+        </div>
+        <div class="right flex">
+            <i class="bi bi-question-circle"></i>
+            <i class="bi bi-gear"></i>
+            <i class="bi bi-menu-button-wide-fill"></i>
+            <img src="./assets/images/man.jpg" alt="">
+        </div>
+    </header>
+
+    <!--Alt kisim-->
+    <section>
+        <nav>
+            <div class="create-mail">
+                <i class="bi bi-pencil-fill"></i>
+                <span>Olustur</span>
+
+            </div>
+            <div class="middle">
+               <!--Buraya kategoriler gelecek-->
+            </div>
+            <div class="bottom">
+                <div>
+                    <span>Labels</span>
+                    <i class="bi bi-plus-lg"></i>
+                </div>
+            </div>
+            
+        </nav>
+        <main>
+            <div class="top">
+                <div class="left">
+                    <input type="checkbox" >
+                    <i class="bi bi-arrow-clockwise"></i>
+                    <i class="bi bi-three-dots-vertical"></i>
+                </div>
+                <div class="right">
+                    <p>1-50 of 94</p>
+                    <i class="bi bi-arrow-left-short passive"></i>
+                    <i class="bi bi-arrow-right-short"></i>
+                </div>
+            </div>
+            <div class="mails-area">
+                <div class="mail">
+                    <div class="left">
+                        <input type="checkbox">
+                        <i class="bi bi-star"></i>
+                        <span>Trendyol</span>
+                    </div>
+                    <div class="right">
+                        <p class="message-title">Indirim yagmuru</p>
+                        <p class="message-desc">Haziran indirimlerimiz basliyor..</p>
+                        <p class="message-date">10 May</p>
+                       <button id="delete">Sil</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <aside>
+            <img src="./assets/images/calendar-48.png" class="icon" alt="image">
+            <img src="./assets/images/keep-48.png" class="icon"alt="image">
+            <img src="./assets/images/task-48.png" class="icon"alt="image">
+            <img src="./assets/images/account-48.png" class="icon"alt="image">
+            <span></span>
+            <i class="bi bi-plus-lg icon"></i>
+            
+        </aside>
+    </section>
+
+<!--Modals kismi-->
+
+<div class="modal-wrapper">
+    <div class="modal-inner">
+        <i class="bi bi-x-lg icon" id="close-btn"></i>
+        <form id="create-mail-form">
+            <label>Kime</label>
+            <input type="text">
+
+            <label>Konu</label>
+            <input type="text">
+
+            <label>Icerik</label>
+            <textarea></textarea>
+            <button id="send-mail-btn">Gonder</button>
+        </form>
+       
+    </div>
+</div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/js/bootstrap.min.js"></script>
+    <script src="main.js" type="module"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+</body>
+
+</html>

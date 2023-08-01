@@ -1,0 +1,23 @@
+.flex{
+    display: flex;
+        justify-content: center;
+        align-items: center;
+}
+
+
+.icon {
+    padding: 5px;
+    border-radius: 50%;
+    transition: all 0.3s;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    display: grid;
+    place-items: center;
+
+    &:hover {
+        background: rgba(227, 226, 226, 0.547);
+
+    }
+
+}
